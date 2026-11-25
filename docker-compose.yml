@@ -1,0 +1,18 @@
+# Keep the existing local PostgreSQL container and volume when the folder is renamed.
+name: movie-match-main
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: moviematch
+      POSTGRES_PASSWORD: moviematch
+      POSTGRES_DB: moviematch
+    ports:
+      - "5432:5432"
+    volumes:
+      - moviematch_pg:/var/lib/postgresql/data
+
+volumes:
+  moviematch_pg:

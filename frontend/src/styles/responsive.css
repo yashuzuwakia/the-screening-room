@@ -1,0 +1,48 @@
+/* Mobile shell: compact top bar + fixed bottom tab navigation */
+@media (max-width: 720px) {
+  :root {
+    --nav-height: 56px;
+    --bottom-nav-height: 58px;
+    --shell-inset-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px));
+    --page-gutter: 16px;
+  }
+
+  .has-bottom-nav {
+    padding-bottom: var(--shell-inset-bottom);
+  }
+
+  .page {
+    padding-block: 20px 32px;
+  }
+
+  .hero__actions .btn,
+  .community__hero-actions .btn,
+  .match__actions .btn,
+  .flow__nav .btn,
+  .details__actions .btn,
+  .discover__cta .btn {
+    flex: 1 1 100%;
+    min-width: min(100%, 320px);
+  }
+
+  .results__topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .profile__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .watchlist__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home__row-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

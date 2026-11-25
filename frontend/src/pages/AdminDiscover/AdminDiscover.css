@@ -1,0 +1,183 @@
+.admin-discover__head {
+  margin-bottom: 24px;
+}
+
+.admin-discover__title {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.admin-discover__panel {
+  margin-bottom: 28px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.admin-discover__section-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.admin-discover__hint {
+  margin-bottom: 12px;
+  font-size: 0.92rem;
+}
+
+.admin-discover__search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-discover__input {
+  flex: 1;
+  min-width: 160px;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+}
+
+.admin-discover__input--year {
+  flex: 0 0 5.5rem;
+  min-width: 0;
+}
+
+.admin-discover__results {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-discover__pick {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  text-align: left;
+}
+
+.admin-discover__pick.is-selected {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+.admin-discover__thumb {
+  width: 42px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.admin-discover__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-discover__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.admin-discover__grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.admin-discover__grid select,
+.admin-discover__grid input {
+  padding: 0.5rem 0.65rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  font: inherit;
+}
+
+.admin-discover__pins {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.admin-discover__pin-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-discover__pin-row.is-editing {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.admin-discover__pin-label {
+  font-size: 0.95rem;
+}
+
+.admin-discover__pin-edit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px 16px;
+  width: 100%;
+}
+
+.admin-discover__pin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.admin-discover__pin-field input {
+  width: 4.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  font: inherit;
+}
+
+.admin-discover__pin-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.admin-discover__pin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.admin-discover__error {
+  color: var(--color-danger);
+}
+
+.admin-discover__ok {
+  color: var(--color-success);
+}

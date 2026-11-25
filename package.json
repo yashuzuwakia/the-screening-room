@@ -1,0 +1,22 @@
+{
+  "name": "the-screening-room",
+  "private": true,
+  "version": "0.0.0",
+  "description": "The Screening Room monorepo — see ARCHITECTURE.md",
+  "scripts": {
+    "test": "npm run test --prefix backend",
+    "start": "npm run start --prefix frontend",
+    "dev": "concurrently -k -n web,api -c cyan,magenta \"npm:start\" \"npm run dev --prefix backend\"",
+    "build": "npm run build --prefix frontend",
+    "lint": "npm run lint --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "dev:api": "npm run dev --prefix backend",
+    "db:up": "docker compose up -d",
+    "db:push": "npm run db:push --prefix backend",
+    "db:studio": "npm run db:studio --prefix backend",
+    "db:generate": "npm run db:generate --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

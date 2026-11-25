@@ -1,0 +1,121 @@
+.community-thread {
+  padding-block: 24px 64px;
+  max-width: 720px;
+}
+
+.community-thread__back {
+  margin-bottom: 1.25rem;
+}
+
+.community-thread__post {
+  padding: 1.5rem 1.6rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.community-thread__title {
+  margin: 0.75rem 0 0.35rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+}
+
+.community-thread__meta {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.community-thread__body {
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.community-thread__movie {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.community-thread__movie img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.community-thread__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.community-thread__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.community-thread__replies {
+  margin-top: 2rem;
+}
+
+.reply-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reply-card {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+}
+
+.reply-card__meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.reply-card__body {
+  margin: 0;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.community-thread__reply-form {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.community-thread__reply-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: inherit;
+  resize: vertical;
+}
+
+.community-thread__signin {
+  margin-top: 1.5rem;
+}

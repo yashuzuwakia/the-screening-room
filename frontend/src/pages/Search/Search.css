@@ -1,0 +1,113 @@
+.search__header {
+  padding-block: 32px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search__title {
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+}
+
+.search__lede {
+  max-width: 42ch;
+}
+
+.search__bar-wrap {
+  margin-top: 12px;
+  max-width: 560px;
+  width: 100%;
+}
+
+.search__recent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  max-width: 640px;
+}
+
+.search__recent-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-subtle);
+}
+
+.search__recent-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search__recent-chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.84rem;
+  font-weight: 500;
+  transition: var(--transition-interactive);
+}
+
+.search__recent-chip:hover {
+  color: var(--color-text);
+  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border-strong));
+}
+
+.search__body {
+  padding-block: 24px 48px;
+}
+
+.search__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.search__meta {
+  margin-bottom: 18px;
+  font-size: 0.92rem;
+}
+
+.search__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 720px) {
+  .search__header {
+    padding-block: 20px 4px;
+  }
+
+  .search__body {
+    padding-block: 16px 32px;
+  }
+
+  .search__controls {
+    justify-content: stretch;
+  }
+
+  .search__controls .dropdown-select--compact {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .search__controls .dropdown-select--compact .dropdown-select__trigger {
+    max-width: none;
+    width: 100%;
+  }
+}

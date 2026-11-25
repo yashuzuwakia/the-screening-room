@@ -1,0 +1,132 @@
+.login {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - var(--nav-height) - 200px);
+}
+
+.login__card {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 40px 36px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(245, 197, 24, 0.14), transparent 60%),
+    var(--color-surface);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.login__logo {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 4px;
+  border-radius: 16px;
+}
+
+.login__title {
+  font-size: 1.9rem;
+}
+
+.login__subtitle {
+  color: var(--color-text-muted);
+}
+
+.login__forgot {
+  margin: -0.35rem 0 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.login__forgot a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.login__forgot-note {
+  font-size: 0.82rem;
+}
+
+.login__region-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  text-align: left;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.login__field input {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: border-color var(--duration-fast) ease;
+}
+
+.login__field input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-soft);
+}
+
+.login__submit {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .login {
+    min-height: auto;
+    padding-bottom: var(--shell-inset-bottom);
+  }
+
+  .login__card {
+    padding: 28px 20px;
+  }
+}
+
+.login__note {
+  color: var(--color-text-subtle);
+  font-size: 0.82rem;
+}
+
+.login__tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.login__tab {
+  padding: 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.login__tab.is-active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.login__error {
+  color: var(--color-danger);
+  font-size: 0.9rem;
+}

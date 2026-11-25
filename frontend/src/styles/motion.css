@@ -1,0 +1,6 @@
+/* Global smooth hovers (pointer devices only) */
+@media (hover: hover) and (pointer: fine) {
+  a:not(.btn):not(.movie-card__link):not(.search-history__item):not(.saved-strip__item) {
+    transition: color var(--duration-base) var(--ease-smooth);
+  }
+}
